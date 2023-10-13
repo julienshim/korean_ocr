@@ -21,9 +21,9 @@ with PyTessBaseAPI(path='./tessdata/', lang='kor+eng') as api:
             # print(utf8_text)
             # print(all_world_confidences)
 
-            # api.SetImage(test_image)
-            # boxes = api.GetComponentImages(RIL.TEXTLINE, True)
-            # print('Found {} textline image components.'.format(len(boxes)))
+            api.SetImage(test_image)
+            boxes = api.GetComponentImages(RIL.TEXTLINE, True)
+            print('Found {} textline image components.'.format(len(boxes)))
 
             draw = ImageDraw.Draw(test_image)
 
