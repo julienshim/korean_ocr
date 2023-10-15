@@ -1,1 +1,1 @@
-# korean_ocr
+# Korean OCR
